@@ -28,6 +28,9 @@ public class Proprietario {
         this.endereco = endereco;
     }
 
+    //Construtor Vazio.
+    public Proprietario() {
+    }
     // --- Getters e Setters ---
 
     public int getId() {

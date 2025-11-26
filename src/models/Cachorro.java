@@ -26,6 +26,10 @@ public class Cachorro extends Animal { //
         super(id, nome, idade, sexo, peso, "Cachorro", raca, proprietarioId); //
     }
 
+    public Cachorro() {
+        super();
+    }
+
     /**
      * Implementação concreta do método abstrato da superclasse.
      * Isto é um exemplo claro de **POLIMORFISMO**.

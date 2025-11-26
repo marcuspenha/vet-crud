@@ -49,6 +49,10 @@ public abstract class Animal {
         this.proprietarioId = proprietarioId; //
     }
 
+    //Construtor Vazio.
+    public Animal() {
+    }
+
     // --- Métodos Especiais (Getters e Setters) ---
 
     public int getId() {
