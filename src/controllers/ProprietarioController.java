@@ -45,7 +45,7 @@ public class ProprietarioController {
     /**
      * Busca um proprietário específico na lista pelo seu ID.
      * <p>
-     * Este método é crucial para a interface (Peão 2) validar se um
+     * Este método é crucial para a interface validar se um
      * proprietário existe antes de vincular um animal a ele.
      *
      * @param id O ID do proprietário a ser procurado.

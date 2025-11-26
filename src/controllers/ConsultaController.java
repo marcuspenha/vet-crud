@@ -9,7 +9,6 @@ import java.util.List;
  * para a entidade {@link Consulta}.
  * <p>
  * Esta classe simula um banco de dados em memória usando uma {@link ArrayList},
- * conforme solicitado para o trabalho (sem persistência real).
  */
 public class ConsultaController {
 
@@ -40,7 +39,7 @@ public class ConsultaController {
      * cadastrada, retorna uma lista vazia.
      */
     public List<Consulta> list() {
-        // A interface (Peão 2) usará isso para exibir os relatórios.
+        // A interface usará isso para exibir os relatórios.
         return consultas;
     }
 

@@ -69,7 +69,7 @@ public class AnimalController {
      * <p>
      * ALTERAÇÃO ESTRUTURAL:
      * Adicionado 'setProprietarioId' para refletir a mudança no model.
-     * Isso permite que a interface (Peão 2) possa alterar o dono de um animal.
+     * Isso permite que a interface possa alterar o dono de um animal.
      *
      * @param id         O ID do animal a ser atualizado.
      * @param novoAnimal Um objeto {@link Animal} com os *novos* dados.
@@ -88,9 +88,11 @@ public class AnimalController {
         // Atualiza os dados do objeto "existente" (que está na lista)
         existente.setNome(novoAnimal.getNome());
         existente.setIdade(novoAnimal.getIdade());
+        existente.setSexo(novoAnimal.getSexo());
         existente.setEspecie(novoAnimal.getEspecie());
+        existente.setSexo(novoAnimal.getSexo());
+        existente.setPeso(novoAnimal.getPeso());
 
-        // --- CORREÇÃO APLICADA AQUI ---
         // Atualiza o ID do proprietário, permitindo a transferência do animal
         existente.setProprietarioId(novoAnimal.getProprietarioId());
 

@@ -18,9 +18,11 @@ public abstract class Animal {
     private int id;
     private String nome;
     private int idade;
+    private String sexo;
+    private float peso;
     private String especie;
+    private String raca;
     /**
-     * ALTERAÇÃO ESTRUTURAL:
      * Adicionado ID do proprietário para criar o relacionamento.
      * Isso permite que um Animal "saiba" quem é seu dono.
      */
@@ -31,16 +33,19 @@ public abstract class Animal {
      * Chamado pelas subclasses (Cachorro, Gato) para inicializar os atributos comuns.
      *
      * @param id             O ID do animal (será gerenciado pelo Controller).
-     * @param nome           O nome do animal (ex: "Rex", "Mimi").
+     * @param nome           O nome do animal.
      * @param idade          A idade do animal.
-     * @param especie        A espécie (ex: "Canino", "Felino").
+     * @param especie        A espécie.
      * @param proprietarioId O ID do {@link Proprietario} dono deste animal.
      */
-    public Animal(int id, String nome, int idade, String especie, int proprietarioId) { //
+    public Animal(int id, String nome, int idade, String sexo, float peso, String especie, String raca, int proprietarioId) { //
         this.id = id;
         this.nome = nome;
         this.idade = idade;
+        this.sexo = sexo;
+        this.peso = peso;
         this.especie = especie;
+        this.raca = raca;
         this.proprietarioId = proprietarioId; //
     }
 
@@ -74,12 +79,36 @@ public abstract class Animal {
         this.idade = idade;
     }
 
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public float getPeso (){
+        return peso;
+    }
+
+    public void setPeso (float peso){
+        this.peso = peso;
+    }
+
     public String getEspecie() {
         return especie;
     }
 
     public void setEspecie(String especie) {
         this.especie = especie;
+    }
+
+    public String raca () {
+        return raca;
+    }
+
+    public void setRaca (String raca) {
+        this.raca = raca;
     }
 
     public int getProprietarioId() {
@@ -95,9 +124,9 @@ public abstract class Animal {
     /**
      * Método abstrato para demonstrar **Polimorfismo**.
      * <p>
-     * ALTERAÇÃO ESTRUTURAL: Alterado de 'void' para 'String'.
-     * O model (Peão 1) não deve imprimir no console (System.out).
-     * Ele deve retornar o dado (o som) para a Interface (Peão 2) decidir
+     * Alterado de 'void' para 'String'.
+     * O model não deve imprimir no console (System.out).
+     * Ele deve retornar o dado (o som) para a Interface decidir
      * o que fazer com ele.
      * <p>
      * Por ser {@code abstract}, este método *obriga* todas as subclasses
@@ -109,14 +138,14 @@ public abstract class Animal {
 
     /**
      * Sobrescreve o método toString() padrão.
-     * Útil para a interface (Peão 2) listar os animais de forma
+     * Útil para a interface listar os animais de forma
      * formatada no console.
      *
      * @return Uma representação textual (String) do objeto Animal.
      */
     @Override
     public String toString() {
-        // ALTERAÇÃO: Usando String.format para uma saída mais limpa
+        //Usando String.format para uma saída mais limpa
         return String.format(
                 "ID: %-3d | Espécie: %-8s | Nome: %-15s | Idade: %-2d | Dono (ID): %d",
                 id,

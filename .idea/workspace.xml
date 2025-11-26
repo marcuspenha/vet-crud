@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39c96d47-06c7-4251-b8ec-151e44a6df12" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AnimalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Cachorro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Cachorro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Gato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Gato.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +54,7 @@
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;backend&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,

@@ -21,9 +21,9 @@ public class Gato extends Animal { //
      * @param idade          A idade do gato.
      * @param proprietarioId O ID do {@link Proprietario} dono deste gato.
      */
-    public Gato(int id, String nome, int idade, int proprietarioId) {
+    public Gato(int id, String nome, int idade, String sexo, float peso,  String raca, int proprietarioId) {
         // Chama o construtor de Animal(id, nome, idade, especie, proprietarioId)
-        super(id, nome, idade, "Gato", proprietarioId); //
+        super(id, nome, idade, sexo, peso, "Gato", raca, proprietarioId); //
     }
 
     //Construtor Vazio.
@@ -34,7 +34,6 @@ public class Gato extends Animal { //
      * Implementação concreta do método abstrato da superclasse.
      * Isto é um exemplo claro de **POLIMORFISMO**.
      * <p>
-     * ALTERAÇÃO ESTRUTURAL:
      * Agora retorna "Miau!" em vez de imprimir no console,
      * respeitando a separação de responsabilidades.
      *
