@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39c96d47-06c7-4251-b8ec-151e44a6df12" name="Changes" comment="">
+    <list default="true" id="1c7d911a-f117-4171-af01-8372e08b019c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AnimalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Cachorro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Cachorro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Gato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Gato.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,41 +24,49 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/marcuspenha/VetCRUD.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/marcuspenha/vet-crud.git&quot;,
     &quot;accountId&quot;: &quot;b77c22e0-8113-424f-baa0-479f2c90f96d&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="35WMk3LeLpVan1Oe7MVMuc0RQ7z" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="361JyPISZ0zgG46HLTKrUWxZViB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;backend&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/marcu/Documents/PROJETO-CRUD/ClinicaPet&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "backend",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="vet-crud" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="vet-crud" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="39c96d47-06c7-4251-b8ec-151e44a6df12" name="Changes" comment="" />
-      <created>1763221513603</created>
+      <changelist id="1c7d911a-f117-4171-af01-8372e08b019c" name="Changes" comment="" />
+      <created>1764168398866</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1763221513603</updated>
+      <updated>1764168398866</updated>
     </task>
     <servers />
   </component>

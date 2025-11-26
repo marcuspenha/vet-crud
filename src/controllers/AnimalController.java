@@ -1,6 +1,6 @@
 package controllers;
 
-import models.Animal; // Importa a superclasse
+import models.Animal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +32,6 @@ public class AnimalController {
      * @return O {@link Animal} cadastrado, agora com o ID atribuído.
      */
     public Animal create(Animal animal) {
-        // Define o ID único e incrementa o contador para o próximo
         animal.setId(contadorId++);
         animais.add(animal);
         return animal;
@@ -55,13 +54,12 @@ public class AnimalController {
      * ou {@code null} se não for encontrado.
      */
     public Animal findById(int id) {
-        // Loop "for-each" para percorrer a lista de animais
         for (Animal a : animais) {
             if (a.getId() == id) {
-                return a; // Retorna o objeto assim que encontrar
+                return a;
             }
         }
-        return null; // Retorna null se o loop terminar sem encontrar
+        return null;
     }
 
     /**
@@ -77,23 +75,18 @@ public class AnimalController {
      * {@code false} se o animal não foi encontrado.
      */
     public boolean update(int id, Animal novoAnimal) {
-        // Reutiliza o findById para localizar o animal a ser editado
         Animal existente = findById(id);
 
-        // Se for nulo, o animal não existe na lista
         if (existente == null) {
             return false;
         }
 
-        // Atualiza os dados do objeto "existente" (que está na lista)
         existente.setNome(novoAnimal.getNome());
         existente.setIdade(novoAnimal.getIdade());
         existente.setSexo(novoAnimal.getSexo());
         existente.setEspecie(novoAnimal.getEspecie());
         existente.setSexo(novoAnimal.getSexo());
         existente.setPeso(novoAnimal.getPeso());
-
-        // Atualiza o ID do proprietário, permitindo a transferência do animal
         existente.setProprietarioId(novoAnimal.getProprietarioId());
 
         return true;
@@ -107,14 +100,12 @@ public class AnimalController {
      * {@code false} se o animal não foi encontrado.
      */
     public boolean delete(int id) {
-        // Localiza o animal que deve ser removido
         Animal a = findById(id);
 
         if (a == null) {
-            return false; // Não encontrou, não pode remover
+            return false;
         }
 
-        // O método .remove(Object) do ArrayList retorna true se conseguiu remover
         return animais.remove(a);
     }
 }
